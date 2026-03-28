@@ -32,9 +32,9 @@ function CountryCard({name, discrpt, imgUrl}) {
     	<img src={imgUrl} alt={name} style={{ width: '98%', borderRadius: '8px' }} />
 		<h3 style={{ margin: 0 }}>{name}</h3>
 		<p style={{ margin: 0, textAlign: 'left'}}>{discrpt}</p>
-		<button onClick={setLike} style={{ marginTop: 'auto', backgroundColor: '#e7dcef', color: 'black', fontFamily: 'Bahnschrift', fontSize: '18px', cursor: 'pointer'}}
+		<button onClick={setLike} style={{ marginTop: 'auto', borderRadius: '8px', backgroundColor: '#f9f8f3', color: 'black', fontFamily: 'Bahnschrift', fontSize: '18px', cursor: 'pointer'}}
 
-		>💜 Понравилось: {likes}</button>
+		>❤️ Понравилось: {likes}</button>
     </div>
   );
 }
