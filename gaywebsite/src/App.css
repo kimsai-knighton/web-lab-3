@@ -1,10 +1,28 @@
 body {
 	background-color: #f3f2ee;
+	margin: 0;
 }
 
 .my-app {
-	padding: 40px;
 	display: flex;
+	
 	flex-direction: row;
-	gap: 40px;
+}
+
+.countries {
+	padding: 40px;
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 70px;
+	
+	
+}
+
+.form {
+	display: flex;
+	width: 400px;
+	margin-top: -0px;
+	flex-direction: column;
+
+	
 }
