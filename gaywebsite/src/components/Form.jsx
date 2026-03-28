@@ -44,7 +44,7 @@ function Form({ onAddCountry }) {
             value={discrpt} 
             onChange={(e) => setDiscrpt(e.target.value)} 
             required 
-            style={{ padding: '8px', borderRadius: '4px', border: '1px solid #ccc', minHeight: '80px', backgroundColor: '#f3f3f3', color: 'black' }}
+            style={{ padding: '8px', borderRadius: '4px', border: '1px solid #ccc', minHeight: '80px', backgroundColor: '#f3f3f3', color: 'black', resize: "none" }}
           />
         </div>
 
