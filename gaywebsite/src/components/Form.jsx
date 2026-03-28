@@ -63,7 +63,7 @@ function Form({ onAddCountry }) {
           backgroundColor: '#f3f3f3',
           color: 'black',
           padding: '10px',
-          border: '2px solid #ebddc2',
+          border: '2px solid #e1d4ba',
           borderRadius: '8px',
           cursor: 'pointer',
           fontWeight: 'bold',

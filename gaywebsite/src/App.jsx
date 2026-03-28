@@ -3,7 +3,7 @@ import './App.css'
 
 import CountryCard from './components/Card'
 import Form from './components/Form'
-import Seacrh from './components/Search'
+import Search from './components/Search'
 
 import RU from './assets/Countries/RU.webp'
 import USA from './assets/Countries/USA.jpg'
@@ -37,9 +37,14 @@ function App() {
     ]);
 
 	const addNewCountry = (newCountry) => {
-			const countryWithId = { ...newCountry, id: Date.now() };
-			setCountries([...countries, countryWithId]);
+		const countryWithId = { ...newCountry, id: Date.now() };
+		setCountries([...countries, countryWithId]);
 	};
+
+	const [searchTerm, setSearchTerm] = useState('');
+	const filteredCountries = countries.filter(country => 
+  		country.name.toLowerCase().includes(searchTerm.toLowerCase())
+	);
 
 	return (
 		<div className="my-app">
@@ -49,11 +54,11 @@ function App() {
 				</div>
 
 				<div className="search">
-					<Seacrh />
+					<Search searchTerm={searchTerm} onSearchChange={setSearchTerm} />
 				</div>
 			</div>
 			<div className='countries'>
-                {countries.map((country) => (
+                {filteredCountries.map((country) => (
                     <CountryCard 
                         key={country.id}
                         name={country.name} 
