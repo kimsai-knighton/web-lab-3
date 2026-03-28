@@ -68,7 +68,7 @@ function Form({ onAddCountry }) {
           cursor: 'pointer',
           fontWeight: 'bold',
 		  fontFamily: 'Segoe Script',
-		  fontSize: '16px'
+		  fontSize: '17px'
         }}>
           Создать карточку
         </button>

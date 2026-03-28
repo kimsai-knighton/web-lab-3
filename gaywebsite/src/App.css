@@ -14,15 +14,28 @@ body {
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
 	gap: 70px;
-	
-	
 }
 
 .form {
 	display: flex;
 	width: 400px;
-	margin-top: -0px;
+	height: 420px;
 	flex-direction: column;
 
-	
+	margin-left: 5px;
+	margin-top: 5px;
+	border: solid 2px #ebddc2;
+	border-radius: 8px;
+}
+
+.search {
+	margin-left: 5px;
+	margin-top: 10px;
+	display: flex;
+	width: 400px;
+	height: 150px;
+	flex-direction: column;
+
+	border: solid 2px #ebddc2;
+	border-radius: 8px;
 }

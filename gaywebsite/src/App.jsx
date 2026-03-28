@@ -1,8 +1,9 @@
 import { useState } from 'react'
 import './App.css'
 
-import CountryCard from './components/Card';
+import CountryCard from './components/Card'
 import Form from './components/Form'
+import Seacrh from './components/Search'
 
 import RU from './assets/Countries/RU.webp'
 import USA from './assets/Countries/USA.jpg'
@@ -42,15 +43,19 @@ function App() {
 
 	return (
 		<div className="my-app">
-			<div className="form">
-				<Form onAddCountry={addNewCountry} />
-			</div>
+			<div>
+				<div className="form">
+					<Form onAddCountry={addNewCountry} />
+				</div>
 
+				<div className="search">
+					<Seacrh />
+				</div>
+			</div>
 			<div className='countries'>
-                {/* 3. Магия .map() — рендерим список динамически */}
                 {countries.map((country) => (
                     <CountryCard 
-                        key={country.id} // Уникальный ключ для оптимизации React
+                        key={country.id}
                         name={country.name} 
                         discrpt={country.discrpt} 
                         imgUrl={country.imgUrl} 
